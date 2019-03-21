@@ -1,0 +1,6 @@
+    <input list="模式" />
+      <datalist id="正常">
+      <option value="复古">
+      <option value="新潮">
+      <option value="官方">
+    </datalist>
