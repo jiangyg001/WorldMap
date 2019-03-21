@@ -1,39 +1,30 @@
 <template> 
-   <div id="demo" :style="{height:insertHeight}"> 
-    <div class="Container"> 
-     <div class="demoLeft"> 
-      <!--BMI国家风险：--> 
-      <div id="slidebarCharts" ref="slidebarCharts"></div> 
-      <!--折线图--> 
-      <div id="peopleInsertCharts" ref="peopleInsertCharts"></div> 
-
-      <div id="slidebarOtherCharts" ref="slidebarOtherCharts"></div>
-      <div id="slidebaranOtherCharts" ref="slidebaranOtherCharts"></div> 
-     </div>
-     <div class="rightContainer"> 
-      <div ref="demoMap" id="demoMap" style="width: 100%,height:500px;"></div> 
-<!--       <div class="degree-statements"> 
-       <ul> 
-        <li style="width: 66px;">等级说明</li> 
-        <li class="li-style-1">1</li> 
-        <li class="li-style-2">2</li> 
-        <li class="li-style-3">3</li> 
-        <li class="li-style-4">4</li> 
-        <li class="li-style-5">5</li> 
-       </ul> 
-      </div>  -->
-
-     </div> 
-     <div class="slidebar"> 
-      <!--柱形图--> 
-      <div id="insertCharts" ref="insertCharts"></div> 
-      <div id="insertotherCharts" ref="insertotherCharts"></div> 
-      <!--横行柱形图--> 
-      <div id="rightTwoCharts" ref="rightTwoCharts"></div> 
-      <div id="rightThreeCharts" ref="rightThreeCharts"></div> 
-     </div>  
+ <div id="demo" style="height:100%;">
+   <div class="top">
+      <img src="./images/worldmap_head.gif">
+   </div> 
+   <div class="Container"> 
+    <div class="demoLeft"> 
+     <!--BMI国家风险：--> 
+     <div id="slidebarCharts" ref="slidebarCharts"></div> 
+     <!--折线图--> 
+     <div id="peopleInsertCharts" ref="peopleInsertCharts"></div> 
+     <div id="slidebarOtherCharts" ref="slidebarOtherCharts"></div> 
+     <div id="slidebaranOtherCharts" ref="slidebaranOtherCharts"></div> 
+    </div> 
+    <div class="rightContainer"> 
+     <div ref="demoMap" id="demoMap" style="width: 100%,height:500px;"></div> 
+    </div> 
+    <div class="slidebar"> 
+     <!--柱形图--> 
+     <div id="insertCharts" ref="insertCharts"></div> 
+     <div id="insertotherCharts" ref="insertotherCharts"></div> 
+     <!--横行柱形图--> 
+     <div id="rightTwoCharts" ref="rightTwoCharts"></div> 
+     <div id="rightThreeCharts" ref="rightThreeCharts"></div> 
     </div> 
    </div> 
+  </div> 
   </template> 
 <script>
  import echarts from 'echarts'
@@ -43,7 +34,10 @@
           name:
           'demo',
           data() {
-             clientHeight: '600px'
+             //clientHeight: '600px'
+             return {
+
+             }
           },
           methods: {
 
@@ -1814,6 +1808,8 @@
   #demo {
     /*display: flex;*/
     width: 100%;
+    font-size: 12px;
+    color: #fff;
     /*background: rgba(40,126,255,0.5);*/
   }
   .demoLeft {
@@ -1880,13 +1876,14 @@
      width: 100%;
      height: 120px;
      display: block;
-     background: url('./images/head.png') no-repeat;
+     /*background: url('./images/worldmap_head.gif') center no-repeat;*/
   }
   .Container{
-     width: 100%;
-     height: 690px;
+     width: 1702px;
+     height: 957px;
      display: block;
-     /*padding: 0px 105px;*/
+     /*background-color: #03226c;*/
+     padding: 0px 108px;
   }
   .Container li{
      list-style: none;
@@ -1897,7 +1894,7 @@
      text-align: center;
      display: block;
   }
-  .li-style-1{
+/*  .li-style-1{
      background: url('./images/li_style_1.gif');
   }
   .li-style-2{
@@ -1911,5 +1908,5 @@
   }
   .li-style-5{
      background: url('./images/li_style_5.gif');
-  }
+  }*/
 </style>
