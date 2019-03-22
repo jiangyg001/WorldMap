@@ -8,10 +8,9 @@
      <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> BMI国家风险</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
-          </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+          <li class="title-list-0">BMI国家风险</li>
+          <li class="title-list-1">
+            <input type="" name="" value="Short-term economic indicators"></li>
         </ul>
      </div>
      <div id="leftChartsone" ref="leftChartsone"></div> 
@@ -19,57 +18,95 @@
           <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> BMI运营风险</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
+          <li class="title-list-0"> BMI运营风险</li>
+          <li class="title-list-1"><input type="" name="" value="Short-term economic indicators">
           </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+         
         </ul>
      </div>
      <div id="leftChartstwo" ref="leftChartstwo"></div> 
           <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> EIU国家风险</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
+          <li class="title-list-0" >EIU国家风险</li>
+          <li class="title-list-1"><input type="" name="" value="Short-term economic indicators">
           </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+         
         </ul>
      </div>
      <div id="leftChartsthree" ref="leftChartsthree"></div> 
           <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> EIU运营风险</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
+          <li class="title-list-0">EIU运营风险</li>
+          <li class="title-list-1"><input type="" name="" value="Short-term economic indicators">
           </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+         
         </ul>
      </div>
      <div id="leftChartsfour" ref="leftChartsfour"></div> 
     </div> 
-    <div class="mainContainer"> 
-     <div ref="worldMap" id="worldMap"></div>
-     <div ref="brandEnterprise" id="brandEnterprise"></div>
+    <div class="mainContainer">
+      <div ref="worldMap" id="worldMap"></div> 
+      <div ref="brandEnterprise" id="brandEnterprise">
+           <img class="arrow-icon" src="./images/arrow_left.gif">
+          <div class="brand-list">
+             <div class="info-up">
+             <img src="./images/Enterprise_logo.gif">
+             <ul>
+                <li class="brand_title">贵州茅台酒股份有限公司</li>
+                <li class="brand_content">同意社会信用代码：293298582923XT 法人代表：李保芳 成立日期：1990-11-20</li>
+             </ul>
+             </div>
+             <div class="info-down">
+                 <img src="./images/two_dimension_code.gif">
+                 <ul>
+                    <li class="brand_title">Guizhou Maotai Liquor Co., Ltd</li>
+                    <li class="brand_content">Agree to the social credit code: 293298582923XT Legal representative: Li Baofang Date of establishment: 1990-11-20</li>
+                 </ul>
+             </div>
+          </div>
+
+             <div class="brand-list">
+             <div class="info-up">
+             <img src="./images/Enterprise_logo.gif">
+             <ul>
+                <li class="brand_title">贵州茅台酒股份有限公司</li>
+                <li class="brand_content">同意社会信用代码：293298582923XT 法人代表：李保芳 成立日期：1990-11-20</li>
+             </ul>
+             </div>
+             <div class="info-down">
+                 <img src="./images/two_dimension_code.gif">
+                 <ul>
+                    <li class="brand_title">Guizhou Maotai Liquor Co., Ltd</li>
+                    <li class="brand_content">Agree to the social credit code: 293298582923XT Legal representative: Li Baofang Date of establishment: 1990-11-20</li>`
+                 </ul>
+             </div>
+          </div>
+          <img class="arrow-icon" src="./images/arrow_left.gif">
+     </div>
+   
+
     </div> 
     <div class="slidebar"> 
      <!--柱形图--> 
           <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> WB世界发展</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
+          <li class="title-list-0">WB世界发展</li>
+          <li class="title-list-1"><input type="" name="" value="Short-term economic indicators">
           </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+         
         </ul>
      </div>
      <div id="rightChartsone" ref="rightChartsone"></div> 
           <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> WB营商</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
+          <li class="title-list-0">WB营商</li>
+          <li class="title-list-1"><input type="" name="" value="Short-term economic indicators">
           </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+         
         </ul>
      </div>
      <div id="rightChartstwo" ref="rightChartstwo"></div> 
@@ -77,20 +114,20 @@
           <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> 国际评级</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
+          <li class="title-list-0">国际评级</li>
+          <li class="title-list-1"><input type="" name="" value="Short-term economic indicators">
           </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+         
         </ul>
      </div>
      <div id="rightChartsthree" ref="rightChartsthree"></div> 
           <!--BMI国家风险：--> 
      <div class="title">
         <ul>
-          <li><span class="title-list-0"> 国内评级</span></li>
-          <li><input type="" name="" value="Short-term economic indicators">
+          <li class="title-list-0"> 国内评级</li>
+          <li class="title-list-1"><input type="" name="" value="Short-term economic indicators">
           </li>
-          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+         
         </ul>
      </div>
      <div id="rightChartsfour" ref="rightChartsfour"></div> 
@@ -109,10 +146,9 @@
         width: 100%;
         height: 100%;
         min-width:1800px;
-        min-height: 1000px;
-         
-          background-color:#03226c;
-          /*background: url('./images/body_background.png') no-repeat;*/
+        min-height: 1000px;   
+/*        background-color:#03226c;*/
+        background: url('./images/body_background.png') no-repeat;
           /*background-size: 100% 100%;*/
       }
 
@@ -179,10 +215,10 @@
       #worldMap {
         margin-top: 143px;
         padding: 1px;
-        width: 98%;
+        width: 100%;
         height: 427px;
         display: block;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
       }
 
       .mainContainer {
@@ -226,39 +262,42 @@
       .title{
          margin-top: 4px;
           width: 100%;
-          height: 42px;
+          height: 38px;
           background: url('./images/title_background.gif') no-repeat;
           display: block;
       }
       .title li{
-         width: 40%;
+         /*width: 40%;*/
          height: 38px;
          list-style: none;
          line-height: 38px;
          float: left;
       }
+      .title-list-0{
+        width: 40%;
+        height: 38px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(8,139,253,1);
+        vertical-align: top;
+        margin-top: 0px;
+        line-height: 24px;
+      }
+      .title-list-1{
+         width: 50%;
+      }
       .title li input{
           width:100%;
           height:36px;
-          padding: 0px 10px;
+          padding:0px 23px 0px 10px;
           border:1px solid rgba(8,139,253,1);
           background: transparent;
           font-size:12px;
-          /*font-family:DINAlternate-Bold;*/
           font-weight:bold;
           color:rgba(8,139,253,1);
           line-height:14px;
-      }
-      .title-list-0{
-          width: 134px;
-          height: 40px;
-          font-size: 20px;
-          font-family: DINAlternate-Bold;
-          font-weight: bold;
-          color: rgba(8,139,253,1);
-          vertical-align: top;
-          margin-top: 0px;
-          line-height: 24px;
+          background: url('./images/input.gif') no-repeat;
+          background-position: right;
       }
       #bml-buttom{
           margin-left: 22px;
@@ -270,9 +309,92 @@
         width:100%;
         height:178px;
         background:rgba(255,255,255,0.05);
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         display: block;
         z-index: 100;
+      }
+
+      .arrow-icon{
+          width: 14px;
+          height: 22px;
+          margin: 9% 3%;
+          display: block;
+          float: left;
+      }
+/*      .arrow-icon-right{
+          width: 14px;
+          height: 22px;
+          margin: 9% 3%;
+          display: block;
+          float: right;
+      }*/
+      .brand-list{
+          width: 40%;
+          height: 77%;
+          margin:20px 0px;
+          margin-right: 1%;
+          display: block;
+          float: left;
+      }
+      .info-up{
+         width:  100%;
+         height: 45%;
+         display: block;
+         /*border: 1px solid;*/
+      }
+      .brand-list .info-up img {
+         width: 61px;
+         height: 61px;
+         display: block;
+         margin-right: 4%;
+         float: left;
+      }
+      .info-up ul ,.info-down ul{
+         display: block;
+         width: 76%;
+         float: left;
+      }
+      .brand-list .info-up li{
+         padding: 1%;
+         list-style: none;
+      }
+     .brand_title{
+          width:100%;
+          height:17px;
+          font-size:12px;
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          line-height:17px;
+      }
+     .brand_content{
+          width:100%;
+          height:28px;
+          font-size:10px;
+          font-weight:500;
+          color:rgba(8,139,253,1);
+          line-height:14px;
+      }
+      .info-down{
+        margin-top: 3%;
+        width: 100%;
+        height: 50%;
+        display: block;
+        /*border: 1px solid;*/
+      }
+      .info-down img {
+         width: 68px;
+         height: 68px;
+         display: block;
+         margin-right: 3%;
+         float: left;
+      }
+      .info-down .brand_content{
+          width:100%;
+          height:42px;
+          font-size:10px;
+          font-weight:500;
+          color:rgba(8,139,253,1);
+          line-height:14px;
       }
 </style>
 <script> 
@@ -293,173 +415,12 @@
               // //  纵向柱形图charts生成方法
               rightChartsone(param) {
                   // 基于准备好的dom，初始化echarts实例
-                  let myChart = echarts.init(document.getElementById('rightChartsone'))
-                  // 绘制图表
-                  // var weatherIcons = {
-                  //     'Sunny': './data/asset/img/weather/sunny_128.png',
-                  //     'Cloudy': './data/asset/img/weather/cloudy_128.png',
-                  //     'Showers': './data/asset/img/weather/showers_128.png'
-                  // };
-
-                  // var seriesLabel = {
-                  //     normal: {
-                  //         show: true,
-                  //         textBorderColor: '#333',
-                  //         textBorderWidth: 2
-                  //     }
-                  // };
-
-                  // let option = {
-                  //     grid: {
-                  //         left: '2%',
-                  //         right: '2%',
-                  //         top:'5%',
-                  //         bottom: '2%',
-                  //         containLabel: true
-                  //       },
-                  //     tooltip: {
-                  //         trigger: 'axis',
-                  //         axisPointer: {
-                  //             type: 'shadow'
-                  //         }
-                  //     },
-                  //     legend: {
-                  //         data: ['City Alpha', 'City Beta', 'City Gamma'],
-                  //         textStyle :{
-                  //           color : '#fff'
-                  //         }
-                  //     },
-                  //     toolbox: {
-                  //         show: true,
-                  //         feature: {
-                  //             saveAsImage: {}
-                  //         }
-                  //     },
-                  //     xAxis: {
-                  //         type: 'value',
-                  //         name: 'Days',
-                  //         axisLabel: {
-                  //             formatter: '{value}',
-                  //             textStyle: {
-                  //                 color: '#fff'
-                  //             }
-                  //         }  
-                  //     },
-                  //     yAxis: {
-                  //         type: 'category',
-                  //         inverse: true,
-                  //         data: ['Sunny', 'Cloudy', 'Showers'],
-                  //         axisLabel: {
-                  //             formatter: function(value) {
-                  //                 return '{' + value + '| }\n{value|' + value + '}';
-                  //             },
-                  //             textStyle:{
-                  //               color: '#fff'
-                  //             },
-                  //             margin: 20,
-                  //             rich: {
-                  //                 value: {
-                  //                     lineHeight: 30,
-                  //                     align: 'center'
-                  //                 },
-                  //                 Sunny: {
-                  //                     height: 40,
-                  //                     align: 'center',
-                  //                     backgroundColor: {
-                  //                         image: weatherIcons.Sunny
-                  //                     }
-                  //                 },
-                  //                 Cloudy: {
-                  //                     height: 40,
-                  //                     align: 'center',
-                  //                     backgroundColor: {
-                  //                         image: weatherIcons.Cloudy
-                  //                     }
-                  //                 },
-                  //                 Showers: {
-                  //                     height: 40,
-                  //                     align: 'center',
-                  //                     backgroundColor: {
-                  //                         image: weatherIcons.Showers
-                  //                     }
-                  //                 }
-                  //             }
-                  //         }
-                  //     },
-                  //     series: [{
-                  //         name: 'City Alpha',
-                  //         type: 'bar',
-                  //         data: [165, 170, 30],
-                  //         label: seriesLabel,
-                  //         markPoint: {
-                  //             symbolSize: 1,
-                  //             symbolOffset: [0, '50%'],
-                  //             label: {
-                  //                 normal: {
-                  //                     formatter: '{a|{a}\n}{b|{b} }{c|{c}}',
-                  //                     backgroundColor: 'rgb(242,242,242)',
-                  //                     borderColor: '#aaa',
-                  //                     borderWidth: 1,
-                  //                     borderRadius: 4,
-                  //                     padding: [4, 10],
-                  //                     lineHeight: 26,
-                  //                     // shadowBlur: 5,
-                  //                     // shadowColor: '#000',
-                  //                     // shadowOffsetX: 0,
-                  //                     // shadowOffsetY: 1,
-                  //                     position: 'right',
-                  //                     distance: 20,
-                  //                     rich: {
-                  //                         a: {
-                  //                             align: 'center',
-                  //                             color: '#000',
-                  //                             fontSize: 18,
-                  //                             textShadowBlur: 2,
-                  //                             textShadowColor: '#000',
-                  //                             textShadowOffsetX: 0,
-                  //                             textShadowOffsetY: 1,
-                  //                             textBorderColor: '#333',
-                  //                             textBorderWidth: 2
-                  //                         },
-                  //                         b: {
-                  //                             color: '#333'
-                  //                         },
-                  //                         c: {
-                  //                             color: '#ff8811',
-                  //                             textBorderColor: '#000',
-                  //                             textBorderWidth: 1,
-                  //                             fontSize: 22
-                  //                         }
-                  //                     }
-                  //                 }
-                  //             },
-                  //             data: [{
-                  //                 type: 'max',
-                  //                 name: 'max days: '
-                  //             },
-                  //             {
-                  //                 type: 'min',
-                  //                 name: 'min days: '
-                  //             }]
-                  //         }
-                  //     },
-                  //     {
-                  //         name: 'City Beta',
-                  //         type: 'bar',
-                  //         label: seriesLabel,
-                  //         data: [150, 105, 110]
-                  //     },
-                  //     {
-                  //         name: 'City Gamma',
-                  //         type: 'bar',
-                  //         label: seriesLabel,
-                  //         data: [220, 82, 63]
-                  //     }]
-                  // };
-                                    let option = {
+                  let myChart = echarts.init(document.getElementById('rightChartsone'));
+                  let option = {
                      // title:{
                      //   text:"WB世界发展"
                      // },
+                       /*backgroundColor : '#1c3f82',*/
                        grid: {
                           left: '2%',
                           right: '2%',
@@ -508,6 +469,7 @@
                       // title: {
                       //     text: 'BMI 国家风险折线图'
                       // },
+                      /*backgroundColor : '#1c3f82',*/
                       grid: {
                           left: '2%',
                           right: '2%',
@@ -608,6 +570,7 @@
                       //     // sublink: 'https://github.com/ecomfe/echarts-stat',
                       //     // left: 'center'
                       // },
+                      /*backgroundColor : '#1c3f82',*/
                       grid: {
                           left: '2%',
                           right: '2%',
@@ -719,6 +682,7 @@
                   };
 
                   let option = {
+                      /*backgroundColor : '#1c3f82',*/
                       grid: {
                           left: '2%',
                           right: '2%',
@@ -897,6 +861,7 @@
 
                   // option
                   let option = {
+                        /*backgroundColor : '#1c3f82',*/
                         grid: {
                           left: '2%',
                           right: '2%',
@@ -1012,6 +977,7 @@
                     var maxData = 2000;
 
                     let option = {
+                        /*backgroundColor : '#1c3f82',*/
                         grid: {
                           left: '2%',
                           right: '2%',
@@ -1093,7 +1059,7 @@
                             type: 'pictorialBar',
                             itemStyle: {
                                 normal: {
-                                    opacity: 0.2
+                                   opacity: 0.2
                                 }
                             },
                             label: {
@@ -1165,6 +1131,7 @@
 
 
                 let option = {
+                    /*backgroundColor : '#1c3f82',*/
                     grid: {
                           left: '2%',
                           right: '2%',
@@ -1283,6 +1250,7 @@
                       // title: {
                       //     text: 'BMI运营风险'
                       // },
+                      /*backgroundColor : '#1c3f82',*/
                       grid: {
                           left: '2%',
                           right: '2%',
