@@ -6,27 +6,258 @@
    <div class="Container"> 
     <div class="demoLeft"> 
      <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> BMI国家风险</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="slidebarCharts" ref="slidebarCharts"></div> 
      <!--折线图--> 
+          <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> BMI运营风险</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="peopleInsertCharts" ref="peopleInsertCharts"></div> 
+          <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> EIU国家风险</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="slidebarOtherCharts" ref="slidebarOtherCharts"></div> 
+          <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> EIU运营风险</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="slidebaranOtherCharts" ref="slidebaranOtherCharts"></div> 
     </div> 
     <div class="rightContainer"> 
-     <div ref="demoMap" id="demoMap" style="width: 100%,height:500px;"></div> 
+     <div ref="demoMap" id="demoMap"></div> 
     </div> 
     <div class="slidebar"> 
      <!--柱形图--> 
+          <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> WB世界发展</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="insertCharts" ref="insertCharts"></div> 
+          <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> WB营商</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="insertotherCharts" ref="insertotherCharts"></div> 
      <!--横行柱形图--> 
+          <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> 国际评级</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="rightTwoCharts" ref="rightTwoCharts"></div> 
+          <!--BMI国家风险：--> 
+     <div class="title">
+        <ul>
+          <li><span class="title-list-0"> 国内评级</span></li>
+          <li><input type="" name="" value="Short-term economic indicators">
+          </li>
+          <li id = "bml-buttom"><img src="./images/input.gif" ></li>
+        </ul>
+     </div>
      <div id="rightThreeCharts" ref="rightThreeCharts"></div> 
     </div> 
-   </div> 
-  </div> 
-  </template> 
-<script>
+   </div>  <!-- Container 结束 -->
+  </div> <!-- demo 结束 -->
+  </template>   
+<style>
+        * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-size: 15px;
+          /*background-color:#03226c;*/
+          /*background: url('./images/11.jpg') no-repeat;*/
+          /*background-size: 100% 100%;*/
+      }
+
+      td {
+        text-align: center
+      }
+
+      p {
+        color: #fff;
+      }
+
+      #demo {
+          /*display: flex;*/
+        width: 100%;
+        font-size: 12px;
+        color: #fff;
+          /*background: rgba(40,126,255,0.5);*/
+      }
+
+      .demoLeft {
+        width: 30%;
+        height: 100%;
+        display: block;
+        float: left;
+          /*border: 1px solid red;*/
+      }
+
+      #insertCharts {
+        width: 100%;
+      }
+
+      #insertotherCharts {
+        width: 100%;
+      }
+
+      #peopleInsertCharts {
+        width: 100%;
+      }
+
+      #rightTwoCharts {
+        width: 100%;
+          /*border: 1px solid;*/
+      }
+
+      #rightThreeCharts {
+        width: 100%;
+      }
+
+      #slidebarCharts {
+        width: 100%;
+        /*height: 500px;*/
+      }
+
+      #slidebarOtherCharts {
+        width: 100%;
+           /*height: 500px;*/
+      }
+
+      #slidebaranOtherCharts {
+        width: 100%;
+      }
+
+      #demoMap {
+        margin-top: 116px;
+        width: 100%;
+        height: 528px;
+        display: block;
+        /*border: 1px solid red;*/
+      }
+
+      .rightContainer {
+        width: 40%;
+        height: 100%;
+        display: block;
+        float: left;
+      }
+
+      .slidebar {
+        width: 29%;
+        height: 100%;
+        display: block;
+        float: left;
+      }
+
+      .degree-statements {
+        position: relative;
+        width: 300px;
+        height: 30px;
+        left: 330px;
+        top: 0px;
+        z-index: 100
+      }
+
+      .top {
+        width: 100%;
+        height: 120px;
+        display: block;
+           /*background: url('./images/worldmap_head.gif') center no-repeat;*/
+      }
+
+      .Container {
+        width: 1702px;
+        height: 957px;
+        display: block;
+        background-color: #03226c;
+        padding: 0px 108px;
+      }
+      .title{
+         margin-top: 4px;
+          width: 100%;
+          height: 42px;
+          background: url('./images/title_background.gif') no-repeat;
+          display: block;
+      }
+      .title li{
+         width: 40%;
+         height: 38px;
+         list-style: none;
+         line-height: 38px;
+         float: left;
+      }
+      .title li input{
+          width:100%;
+          height:36px;
+          padding: 0px 10px;
+          border:1px solid rgba(8,139,253,1);
+          background: transparent;
+          font-size:12px;
+          /*font-family:DINAlternate-Bold;*/
+          font-weight:bold;
+          color:rgba(8,139,253,1);
+          line-height:14px;
+      }
+      .title-list-0{
+          width: 134px;
+          height: 40px;
+          font-size: 20px;
+          font-family: DINAlternate-Bold;
+          font-weight: bold;
+          color: rgba(8,139,253,1);
+          vertical-align: top;
+          margin-top: 0px;
+          line-height: 24px;
+      }
+      #bml-buttom{
+          margin-left: 22px;
+          margin-top:1px;
+          width: 36px;
+      }
+</style>
+<script> 
  import echarts from 'echarts'
  import ecStat from 'echarts-stat'
  import 'echarts/map/js/world.js'
@@ -83,8 +314,11 @@
                           type: 'value',
                           name: 'Days',
                           axisLabel: {
-                              formatter: '{value}'
-                          }
+                              formatter: '{value}',
+                              textStyle: {
+                                  color: '#000'
+                              }
+                          }  
                       },
                       yAxis: {
                           type: 'category',
@@ -150,7 +384,7 @@
                                       rich: {
                                           a: {
                                               align: 'center',
-                                              color: '#fff',
+                                              color: '#000',
                                               fontSize: 18,
                                               textShadowBlur: 2,
                                               textShadowColor: '#000',
@@ -206,14 +440,28 @@
                       // },
                       xAxis: {
                           type: 'category',
-                          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+                          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                          axisLabel: {
+                            show: true,
+                            textStyle: {
+                              normal:{
+                                color: '#000'
+                              }
+                            }
+                        }
+
                       },
                       yAxis: {
                           type: 'value'
                       },
                       series: [{
                           data: [820, 932, 901, 934, 1290, 1330, 1320],
-                          type: 'line'
+                          type: 'line',
+                          textStyle:{
+                             normal : {
+                               color : '#000'
+                             }
+                          }
                       }]
                   };
                   myChart.setOption(option, true);
@@ -229,7 +477,14 @@
                       xAxis: {
                           type: 'category',
                           boundaryGap: false,
-                          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+                          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                          axisLabel: {
+                              formatter: '{value}',
+                              textStyle: {
+                                  color: '#000'
+                              }
+                          } 
+
                       },
                       yAxis: {
                           type: 'value'
@@ -292,7 +547,13 @@
                               lineStyle: {
                                   color: '#ccc'
                               }
-                          }
+                          },
+                          axisLabel: {
+                              inside: true,
+                              textStyle: {
+                                  color: '#000'
+                              }
+                          },
                       },
                       yAxis: {
                           splitLine: {show: false},
@@ -386,8 +647,12 @@
                                 }
                             },
                             axisLabel: {
-                                margin: 10
-                            }
+                              margin: 10,
+                              formatter: '{value}',
+                              textStyle: {
+                                  color: '#000'
+                              }
+                          } 
                         },
                         yAxis: {
                             data: ['2013', '2014', '2015', '2016'],
@@ -523,7 +788,8 @@
                                   type: 'dashed'
                               }
                           },
-                          splitNumber: 20
+                          splitNumber: 20,
+
                       },
                       yAxis: {
                           type: 'value',
@@ -631,8 +897,9 @@
                         axisLabel: {
                             margin: 30,
                             textStyle: {
+                                color: '#000',
                                 fontSize: 14
-                            }
+                            },
                         },
                         axisPointer: {
                             label: {
@@ -715,15 +982,15 @@
                   }
 
                   let option = {
-                      title: {
-                          text: 'BMI运营风险'
-                      },
+                      // title: {
+                      //     text: 'BMI运营风险'
+                      // },
                       xAxis: {
                           data: dataAxis,
                           axisLabel: {
                               inside: true,
                               textStyle: {
-                                  color: '#fff'
+                                  color: '#000'
                               }
                           },
                           axisTick: {
@@ -1754,15 +2021,17 @@
           },
           mounted() {
               // this.$refs.demoMap.style.height = window.innerHeight + 'px'
-            this.$refs.demoMap.style.height = 350 + 'px';
-            this.$refs.insertCharts.style.height = 200 + 'px';
-            this.$refs.insertotherCharts.style.height = 200 + 'px';
-            this.$refs.rightTwoCharts.style.height = 200 + 'px';
-            this.$refs.rightThreeCharts.style.height = 200 + 'px';
-            this.$refs.slidebarCharts.style.height = 200 + 'px';
-            this.$refs.slidebarOtherCharts.style.height = 200 + 'px';
-            this.$refs.slidebaranOtherCharts.style.height = 200 + 'px';
-            this.$refs.peopleInsertCharts.style.height = 200+ 'px';
+            console.log("mounted  + window.innerHeight  ===" + window.innerHeight);
+            console.log("mounted  + window.innerWidth  ===" + window.innerWidth);
+            this.$refs.slidebarCharts.style.height = 143 + 'px';
+            this.$refs.peopleInsertCharts.style.height = 188+ 'px';
+            this.$refs.slidebarOtherCharts.style.height = 188 + 'px';
+            this.$refs.slidebaranOtherCharts.style.height = 178 + 'px';
+            this.$refs.demoMap.style.height = 528 + 'px';
+            this.$refs.insertCharts.style.height = 143 + 'px';
+            this.$refs.insertotherCharts.style.height = 188 + 'px';
+            this.$refs.rightTwoCharts.style.height = 188 + 'px';
+            this.$refs.rightThreeCharts.style.height = 178 + 'px'; 
             this.drawLine(); 
             this.rightTwoCharts();
             this.rightThreeCharts(); 
@@ -1774,7 +2043,8 @@
             this.map();
             let self  = this;
             window.onresize = function temp() {
-              console.log("test!!!");
+              console.log("mounted  + window.innerHeight  ===" + window.innerHeight);
+                 console.log("mounted  + window.innerWidth  ===" + window.innerWidth);
               self.drawLine(); 
               self.rightTwoCharts();
               self.rightThreeCharts(); 
@@ -1788,125 +2058,3 @@
           }
       } 
   </script>
-  <style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-size: 15px;
-    /*background-color:#03226c;*/
-    /*background: url('./images/11.jpg') no-repeat;*/
-    /*background-size: 100% 100%;*/
-  }
-  td {
-    text-align: center
-  }
-  p {
-    color:#fff;
-  }
-  #demo {
-    /*display: flex;*/
-    width: 100%;
-    font-size: 12px;
-    color: #fff;
-    /*background: rgba(40,126,255,0.5);*/
-  }
-  .demoLeft {
-    width: 30%;
-    height: 100%;
-    display: block;
-    float: left;
-    /*border: 1px solid red;*/
-  }
-  #insertCharts {
-    width: 100%;
-  }
-  #insertotherCharts{
-     width: 100%;
-  }
-  #peopleInsertCharts {
-    width: 100%;
-  }
-  #rightTwoCharts {
-    width: 100%;
-    /*border: 1px solid;*/
-  }
-  #rightThreeCharts{
-     width: 100%;
-  }
-  #slidebarCharts{
-     width: 100%;
-     height: 500px;
-  }
-  #slidebarOtherCharts{
-     width: 100%;
-     /*height: 500px;*/
-  }
-  #slidebaranOtherCharts{
-     width: 100%;
-  }
-  #demoMap {
-    width: 100%;
-    height: 500px;
-    display: block;
-    border: 1px solid red;
-  }
-  .rightContainer {
-    width: 40%;
-    height: 100%;
-    display: block;
-    float: left;
-  }
-  .slidebar{
-     width: 29%;
-     height:100%;
-     display: block;
-     float: left;
-  }
-  .degree-statements{
-      position:  relative;
-      width: 300px;
-      height: 30px;
-      left: 330px;
-      top: 0px;
-      z-index: 100
-  }
-  .top{
-     width: 100%;
-     height: 120px;
-     display: block;
-     /*background: url('./images/worldmap_head.gif') center no-repeat;*/
-  }
-  .Container{
-     width: 1702px;
-     height: 957px;
-     display: block;
-     /*background-color: #03226c;*/
-     padding: 0px 108px;
-  }
-  .Container li{
-     list-style: none;
-     width: 33px;
-     float: left;
-     color: #fff;
-     line-height: 33px;
-     text-align: center;
-     display: block;
-  }
-/*  .li-style-1{
-     background: url('./images/li_style_1.gif');
-  }
-  .li-style-2{
-     background: url('./images/li_style_2.gif');
-  }
-  .li-style-3{
-     background: url('./images/li_style_3.gif');
-  }
-  .li-style-4{
-     background: url('./images/li_style_4.gif');
-  }
-  .li-style-5{
-     background: url('./images/li_style_5.gif');
-  }*/
-</style>
