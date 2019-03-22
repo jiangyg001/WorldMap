@@ -47,8 +47,9 @@
      </div>
      <div id="leftChartsfour" ref="leftChartsfour"></div> 
     </div> 
-    <div class="rightContainer"> 
-     <div ref="worldMap" id="worldMap"></div> 
+    <div class="mainContainer"> 
+     <div ref="worldMap" id="worldMap"></div>
+     <div ref="brandEnterprise" id="brandEnterprise"></div>
     </div> 
     <div class="slidebar"> 
      <!--柱形图--> 
@@ -109,8 +110,9 @@
         height: 100%;
         min-width:1800px;
         min-height: 1000px;
-          /*background-color:#03226c;*/
-          /*background: url('./images/11.jpg') no-repeat;*/
+         
+          background-color:#03226c;
+          /*background: url('./images/body_background.png') no-repeat;*/
           /*background-size: 100% 100%;*/
       }
 
@@ -131,7 +133,7 @@
       }
 
       .demoLeft {
-        width: 30%;
+        width: 24%;
         height: 100%;
         display: block;
         float: left;
@@ -175,22 +177,24 @@
       }
 
       #worldMap {
-        margin-top: 116px;
-        width: 100%;
-        height: 528px;
+        margin-top: 143px;
+        padding: 1px;
+        width: 98%;
+        height: 427px;
         display: block;
-        /*border: 1px solid red;*/
+        border: 1px solid red;
       }
 
-      .rightContainer {
-        width: 40%;
+      .mainContainer {
+        width: 50%;
         height: 100%;
         display: block;
+        margin:0 1%;
         float: left;
       }
 
       .slidebar {
-        width: 29%;
+        width: 24%;
         height: 100%;
         display: block;
         float: left;
@@ -213,11 +217,11 @@
       }
 
       .Container {
-        width: 1702px;
-        height: 957px;
+        width: 88%;
+        height: 100%;
         display: block;
-        background-color: #03226c;
-        padding: 0px 108px;
+        margin:0 auto;
+        /*padding: 0px 08px;*/
       }
       .title{
          margin-top: 4px;
@@ -260,6 +264,15 @@
           margin-left: 22px;
           margin-top:1px;
           width: 36px;
+      }
+      #brandEnterprise{
+        margin-bottom: 17px;
+        width:100%;
+        height:178px;
+        background:rgba(255,255,255,0.05);
+        border: 1px solid red;
+        display: block;
+        z-index: 100;
       }
 </style>
 <script> 
@@ -1523,10 +1536,10 @@
                           top: 'top'  
                       },
                       grid: {
-                          left: '2%',
-                          right: '2%',
-                          top:'5%',
-                          bottom: '2%',
+                          left: '1%',
+                          right: '1%',
+                          top:'1%',
+                          bottom: '1%',
                           containLabel: true
                         },
                       dataRange: {
@@ -1561,14 +1574,14 @@
                               }
                           }
                       },
-                      series: [{
+                      series: [{        
                           type: 'map',
                           mapType: 'world',
                           zoom: 1.2,
                           mapLocation: {
                               y: 100
                           },
-                          itemStyle: {
+                          itemStyle: {  
                               emphasis: {
                                   label: {
                                       show: true
