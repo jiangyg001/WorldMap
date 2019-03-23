@@ -497,7 +497,7 @@
                           lineStyle: {
                               normal: {
                                   color: '#088BFD',
-                                  width: 2
+                                  width: 1
                                   // type: 'solid'
                               }
                           },
@@ -566,7 +566,7 @@
                           lineStyle: {
                               normal: {
                                   color: '#088BFD',
-                                  width: 2
+                                  width: 1
                                   // type: 'solid'
                               }
                           },
@@ -697,6 +697,7 @@
                       series: [{
                           name: 'scatter',
                           type: 'scatter',
+                          symbolSize: 5,
                           label: {
                               emphasis: {
                                   show: true,
@@ -714,6 +715,13 @@
                           type: 'line',
                           showSymbol: false,
                           smooth: true,
+                          lineStyle: {
+                              normal: {
+                                  color: '#088BFD',
+                                  width: 1,
+                                  type: 'solid'
+                              }
+                          },
                           data: myRegression.points,
                           markPoint: {
                               itemStyle: {
@@ -727,7 +735,7 @@
                                       position: 'left',
                                       formatter: myRegression.expression,
                                       textStyle: {
-                                          color: '#333',
+                                          color: '#798ab1',
                                           fontSize: 14
                                       }
                                   }
@@ -1143,7 +1151,7 @@
                                         color: 'green',
                                         type: 'dotted',
                                         opacity: 0.2,
-                                        width: 2
+                                        width: 1
                                     }
                                 },
                                 data: [{
