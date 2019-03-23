@@ -10,7 +10,13 @@
         <ul>
           <li class="title-list-0">BMI国家风险</li>
           <li class="title-list-1">
-            <input type="" name="" value="Short-term economic indicators"></li>
+            <input type="text" name="" list="list_0" value="Short-term economic indicators">
+             <datalist id ="list_0">
+                <option value="Short-term economic indicators"></option>
+                <option value="test"></option>
+                <option value="test--1"></option>
+             </datalist>
+            </li>
         </ul>
      </div>
      <div id="leftChartsone" ref="leftChartsone"></div> 
@@ -151,7 +157,7 @@
         background: url('./images/body_background.png') no-repeat;
           /*background-size: 100% 100%;*/
       }
-
+  
       td {
         text-align: center
       }
@@ -159,7 +165,11 @@
       p {
         color: #fff;
       }
-
+      input::-webkit-outer-spin-button,  
+      input::-webkit-calendar-picker-indicator{
+        display: none;
+        -webkit-appearance: none;
+      }
       #demo {
           /*display: flex;*/
         width: 100%;
