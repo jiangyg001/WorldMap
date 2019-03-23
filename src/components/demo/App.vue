@@ -1,7 +1,7 @@
 <template> 
  <div id="demo" style="height:100%;">
    <div class="top">
-      <img src="./images/worldmap_head.gif">
+       <marquee id = "country_list" class="country_info">Selected Country：</marquee>
    </div> 
    <div class="Container"> 
     <div class="demoLeft"> 
@@ -146,24 +146,19 @@
         margin: 0;
         padding: 0;
       }
-
       body {
         font-size: 15px;
         width: 100%;
         height: 100%;
         min-width:1800px;
         min-height: 1000px;   
-/*        background-color:#03226c;*/
         background: url('./images/body_background.png') no-repeat;
-          /*background-size: 100% 100%;*/
       }
-  
       td {
         text-align: center
       }
-
       p {
-        color: #fff;
+        color: #798ab1;
       }
       input::-webkit-outer-spin-button,  
       input::-webkit-calendar-picker-indicator{
@@ -174,7 +169,7 @@
           /*display: flex;*/
         width: 100%;
         font-size: 12px;
-        color: #fff;
+        color: #798ab1;
           /*background: rgba(40,126,255,0.5);*/
       }
 
@@ -187,38 +182,46 @@
       }
 
       #rightChartsone {
+        margin:14px 0px 9px 0px;
         width: 100%;
       }
 
       #rightChartstwo {
+        margin:14px 0px 9px 0px;
         width: 100%;
       }
 
       #leftChartstwo {
+        margin:14px 0px 9px 0px;
         width: 100%;
       }
 
       #rightChartsthree {
+        margin:14px 0px 9px 0px;
         width: 100%;
           /*border: 1px solid;*/
       }
 
       #rightChartsfour {
+        margin:14px 0px 9px 0px;
         width: 100%;
       }
 
       #leftChartsone {
+        margin:14px 0px 9px 0px;
         width: 100%;
         height: 20%;
         /*height: 500px;*/
       }
 
       #leftChartsthree {
+        margin:14px 0px 9px 0px;
         width: 100%;
            /*height: 500px;*/
       }
 
       #leftChartsfour {
+        margin:14px 0px 9px 0px;
         width: 100%;
       }
 
@@ -242,6 +245,7 @@
       .slidebar {
         width: 24%;
         height: 100%;
+        margin-top: -6px;
         display: block;
         float: left;
       }
@@ -259,9 +263,8 @@
         width: 100%;
         height: 120px;
         display: block;
-           /*background: url('./images/worldmap_head.gif') center no-repeat;*/
+        background: url('./images/worldmap_head.gif') center no-repeat;
       }
-
       .Container {
         width: 88%;
         height: 100%;
@@ -270,7 +273,6 @@
         /*padding: 0px 08px;*/
       }
       .title{
-         margin-top: 4px;
           width: 100%;
           height: 38px;
           background: url('./images/title_background.gif') no-repeat;
@@ -278,14 +280,15 @@
       }
       .title li{
          /*width: 40%;*/
-         height: 38px;
+         height: 36px;
          list-style: none;
-         line-height: 38px;
+         margin-right: 10%;
+         line-height: 36px;
          float: left;
       }
       .title-list-0{
         width: 40%;
-        height: 38px;
+        height: 36px;
         font-size: 20px;
         font-weight: bold;
         color: rgba(8,139,253,1);
@@ -294,11 +297,11 @@
         line-height: 24px;
       }
       .title-list-1{
-         width: 50%;
+         width: 40%;
       }
       .title li input{
           width:100%;
-          height:36px;
+          height: 34px;
           padding:0px 23px 0px 10px;
           border:1px solid rgba(8,139,253,1);
           background: transparent;
@@ -315,7 +318,7 @@
           width: 36px;
       }
       #brandEnterprise{
-        margin-bottom: 17px;
+        margin-top: 30px;
         width:100%;
         height:178px;
         background:rgba(255,255,255,0.05);
@@ -406,6 +409,18 @@
           color:rgba(8,139,253,1);
           line-height:14px;
       }
+      .country_info{
+        display: block;
+        width: 576px;
+        height: 34px;
+        font-size: 25px;
+        font-weight: 800;
+        color: rgba(8,139,253,1);
+        line-height: 34px;
+        padding-top: 3%;
+        margin: 0px auto;
+        text-align: left;
+      }
 </style>
 <script> 
  import echarts from 'echarts'
@@ -445,18 +460,31 @@
                           axisLabel: {
                               formatter: '{value}',
                               textStyle: {
-                                  color: '#fff'
+                                  color: '#798ab1'
                               }
-                          } 
+                          },
+                          axisLine: {
+                              lineStyle: {
+                                  color: '#18468f'
+                              }
+                            },
 
                       },
                       yAxis: {
                           type: 'value',
                           axisLabel: {
                               textStyle: {
-                                  color: '#fff'
+                                  color: '#798ab1'
                               }
-                          } 
+                          },
+                          splitLine:{
+                             show:false
+                          },
+                           axisLine: {
+                              lineStyle: {
+                                  color: '#18468f'
+                              }
+                            },
                       },
                       series: [{
                           data: [820, 932, 901, 934, 1290, 1330, 1320],
@@ -465,7 +493,14 @@
                                normal:{
                                  color: '#18468f'
                                }
-                          }
+                          },
+                          lineStyle: {
+                              normal: {
+                                  color: '#088BFD',
+                                  width: 2
+                                  // type: 'solid'
+                              }
+                          },
                       }]
                   };
                   myChart.setOption(option);
@@ -479,7 +514,6 @@
                       // title: {
                       //     text: 'BMI 国家风险折线图'
                       // },
-                      /*backgroundColor : '#1c3f82',*/
                       grid: {
                           left: '2%',
                           right: '2%',
@@ -493,17 +527,32 @@
                           axisLabel: {
                             show: true,
                             textStyle: {
-                                color: '#FFFFFF'
+                                color: '#798ab1'
                             }
-                        }
-
+                           },
+                          axisLine: {
+                              lineStyle: {
+                                  color: '#18468f'
+                              }
+                          },
+                          splitLine:{
+                             show : false
+                          }
                       },
                       yAxis: {
                           type: 'value',
                           axisLabel: {
                               textStyle: {
-                                  color: '#FFFFFF'
-                                }
+                                  color: '#798ab1'
+                                },
+                          },
+                          axisLine: {
+                              lineStyle: {
+                                  color: '#18468f'
+                              }
+                          },
+                          splitLine:{
+                              show:false
                           }
                       },
                       series: [{
@@ -511,9 +560,16 @@
                           type: 'line',
                           textStyle:{
                              normal : {
-                               color : '#000'
+                               color : '#066bd1'
                              }
-                          }
+                          },
+                          lineStyle: {
+                              normal: {
+                                  color: '#088BFD',
+                                  width: 2
+                                  // type: 'solid'
+                              }
+                          },
                       }]
                   };
                   myChart.setOption(option, true);
@@ -540,7 +596,7 @@
                  //          axisLabel: {
                  //              formatter: '{value}',
                  //              textStyle: {
-                 //                  color: '#fff'
+                 //                  color: '#798ab1'
                  //              }
                  //          } 
 
@@ -549,7 +605,7 @@
                  //          type: 'value',
                  //          axisLabel: {
                  //              textStyle: {
-                 //                  color: '#fff'
+                 //                  color: '#798ab1'
                  //              }
                  //          } 
                  //      },
@@ -598,31 +654,45 @@
                           type: 'value',
                            axisLabel: {
                               textStyle: {
-                                  color: '#fff'
+                                  color: '#798ab1'
                               }
                           },
+                          axisLine: {
+                              lineStyle: {
+                                  color: '#18468f'
+                              }
+                          },
+ 
                           splitLine: {
                               lineStyle: {
                                   type: 'dashed',
-                                  color : '#fff'
+                                  color : '#798ab1'
                               }
                           },
-                          splitNumber: 20,
+                          splitNumber: 10,
 
                       },
                       yAxis: {
                           type: 'value',
-                          splitLine: {
+                          // splitLine: {
+                          //     lineStyle: {
+                          //         type: 'dashed',
+                          //         color : '#798ab1'
+                          //     }
+                          // },
+                          axisLine: {
                               lineStyle: {
-                                  type: 'dashed',
-                                  color : '#fff'
+                                  color: '#18468f'
                               }
                           },
                           axisLabel: {
                               textStyle: {
-                                  color: '#fff'
+                                  color: '#798ab1'
                               }
                           },
+                          splitLine:{
+                             show:false
+                          }
                       },
                       series: [{
                           name: 'scatter',
@@ -709,7 +779,7 @@
                       legend: {
                           data: ['City Alpha', 'City Beta', 'City Gamma'],
                           textStyle :{
-                            color : '#fff'
+                            color : '#798ab1'
                           }
                       },
                       toolbox: {
@@ -724,9 +794,14 @@
                           axisLabel: {
                               formatter: '{value}',
                               textStyle: {
-                                  color: '#fff'
+                                  color: '#798ab1'
                               }
-                          }  
+                          },
+                          axisLine: {
+                              lineStyle: {
+                                  color: '#18468f'
+                              }
+                            },
                       },
                       yAxis: {
                           type: 'category',
@@ -737,7 +812,7 @@
                                   return '{' + value + '| }\n{value|' + value + '}';
                               },
                               textStyle:{
-                                color: '#fff'
+                                color: '#798ab1'
                               },
                               margin: 20,
                               rich: {
@@ -767,7 +842,12 @@
                                       }
                                   }
                               }
-                          }
+                          },
+                          axisLine: {
+                              lineStyle: {
+                                  color: '#18468f'
+                              }
+                            },
                       },
                       series: [{
                           name: 'City Alpha',
@@ -850,7 +930,7 @@
                   // Generate data
 
 
-                                     var category = [];
+                  var category = [];
                   var dottedBase = +new Date();
                   var lineData = [];
                   var barData = [];
@@ -896,21 +976,22 @@
                           data: category,
                           axisLine: {
                               lineStyle: {
-                                  color: '#ccc'
+                                  color: '#18468f'
                               }
                           },
                           axisLabel: {
                               inside: true,
                               textStyle: {
-                                  color: '#000'
+                                  color: '#18468f'
                               }
                           },
+
                       },
                       yAxis: {
                           splitLine: {show: false},
                           axisLine: {
                               lineStyle: {
-                                  color: '#ccc'
+                                  color: '#18468f'
                               }
                           }
                       },
@@ -1003,9 +1084,10 @@
                             offset: 10,
                             axisLine: {
                                 lineStyle: {
-                                    color: '#999'
+                                    color: '#18468f'
                                 }
                             },
+
                             axisLabel: {
                               margin: 10,
                               formatter: '{value}',
@@ -1026,6 +1108,11 @@
                                     fontSize: 16
                                 }
                             }
+                            // axisLine: {
+                            //   lineStyle: {
+                            //       color: '#18468f'
+                            //   }
+                            // },
                         },
                         grid: {
                             top: 'center',
@@ -1155,7 +1242,7 @@
                     legend: {
                         data: ['2015', '2016'],
                         textStyle:{
-                           color: '#fff'
+                           color: '#798ab1'
                         }
                     },
                     tooltip: {
@@ -1172,7 +1259,7 @@
                         axisLabel: {
                             margin: 30,
                             textStyle: {
-                                color: '#fff',
+                                color: '#798ab1',
                                 fontSize: 14
                             },
                         },
@@ -1291,6 +1378,9 @@
                           axisTick: {
                               show: false
                           },
+                          splitLine:{
+                             show: false
+                          },
                           axisLabel: {
                               textStyle: {
                                   color: '#999'
@@ -1370,12 +1460,12 @@
                   //     data: ['一月', '二月', '三', '四月', '五月', '六月', '七月'],
                   //     axisLabel: {
                   //       textStyle: {
-                  //         color: '#ffffff'
+                  //         color: '#798ab1798ab1'
                   //       }
                   //     },
                   //     axisLine: {
                   //       lineStyle: {
-                  //         color: '#ffffff'
+                  //         color: '#798ab1798ab1'
                   //       }
                   //     },
                   //     axisTick: {
@@ -1388,13 +1478,13 @@
                   //     splitLine: {show: false},
                   //     axisLabel: {
                   //       textStyle: {
-                  //         color: '#ffffff'
+                  //         color: '#798ab1798ab1'
                   //       }
                   //     },
                   //     axisLine: {
                   //       show: false,
                   //       lineStyle: {
-                  //         color: '#ffffff'
+                  //         color: '#798ab1798ab1'
                   //       }
                   //     }
                   //   },
@@ -2280,23 +2370,31 @@
                   myChart.setOption(option);
                   //  横向柱形图数据change
                   myChart.on('click', (param) =>{
-                      this.radarData.forEach((item, index) =>{
-                          if (param.data.name.toLowerCase() === item.name.toLowerCase()) {
-                              // this.rightChartsthree(item)
-                          }
-                      })
-                      //  纵向柱形图数据change
-                      this.bar.forEach((item, index) =>{
-                          if (param.data.name.toLowerCase() === item.name.toLowerCase()) {
-                              // this.drawLine(item)
-                          }
-                      })
-                      //  折线图数据change
-                      this.pie.forEach((item, index) =>{
-                          if (param.data.name.toLowerCase() === item.name.toLowerCase()) {
-                              // this.rightBottomRightCharts(item)
-                          }
-                      })
+                      console.log("myChart   param==="+param);
+                      var country_info = document.getElementById("country_list");
+                      var name = param.data.name.toString();
+                      var info = country_info.innerText;
+                      if(info.indexOf('name') < 0)
+                      {
+                          country_info.innerText += "  "+name;
+                      }
+                      // this.radarData.forEach((item, index) =>{
+                      //     if (param.data.name.toLowerCase() === item.name.toLowerCase()) {
+                      //         // this.rightChartsthree(item)
+                      //     }
+                      // })
+                      // //  纵向柱形图数据change
+                      // this.bar.forEach((item, index) =>{
+                      //     if (param.data.name.toLowerCase() === item.name.toLowerCase()) {
+                      //         // this.drawLine(item)
+                      //     }
+                      // })
+                      // //  折线图数据change
+                      // this.pie.forEach((item, index) =>{
+                      //     if (param.data.name.toLowerCase() === item.name.toLowerCase()) {
+                      //         // this.rightBottomRightCharts(item)
+                      //     }
+                      // })
                   })
                   // china双击事件
                   myChart.on('dblclick', (param)=>{
