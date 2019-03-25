@@ -5,8 +5,8 @@
 </template>
 
 <script>
-	import leftandmidelJS from './leftandmidel.js';
-    export default leftandmidelJS;
+	//import leftandmidelJS from './leftandmidel.js';
+    //export default leftandmidelJS;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

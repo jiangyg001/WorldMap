@@ -11,21 +11,21 @@ export default new Router({
       path: '/',
       name: 'demo',
       component: demo
-    },
-    {
-      path: '/browser',
-      name: 'browser',
-      component: browser
-    },
-    {
-      path: '/map',
-      name: 'map',
-      component: map
-    },
-    {
-          path: '/goalMap',
-          name: 'demo',
-          component: demo
-        }
+    }
+    // {
+    //   path: '/browser',
+    //   name: 'browser',
+    //   component: browser
+    // },
+    // {
+    //   path: '/map',
+    //   name: 'map',
+    //   component: map
+    // },
+    // {
+    //       path: '/goalMap',
+    //       name: 'demo',
+    //       component: demo
+    //     }
   ]
 })

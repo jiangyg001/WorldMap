@@ -18,6 +18,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
     clientLogLevel: 'warning',
+    disableHostCheck: true,
     historyApiFallback: true,
     hot: true,
     compress: true,
