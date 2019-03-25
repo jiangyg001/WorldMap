@@ -1,4 +1,148 @@
-        // 对应生成地图颜色板块数据
+<script>
+                       /**
+           * 显示点的坐标
+           */
+                  var geoCoordMap = {
+                      'china': [130.0823, 28.2568],
+                      'Botswana': [4.895168, 52.370216],
+                      'Canada': [ - 130.895168, 70.2312],
+                      'Brazil': [ - 50.895168, -20.2312]
+                  }
+                  /**
+           * 所在点对应数据
+           * 上面数据添加修改后务必这里添加修改，value可不用
+           */
+                  var data = [{
+                      id: 1,
+                      name: 'china',
+                      value: 10
+                  },
+                  {
+                      id: 2,
+                      name: 'Botswana',
+                      value: 28397.812
+                  },
+                  {
+                      id: 3,
+                      name: 'Canada'
+                  },
+                  {
+                      id: 4,
+                      name: 'Brazil'
+                  }]
+                  //  生成出线方法
+                  function formtGCData(geoData, data, srcNam, dest) {
+                      var tGeoDt = []
+                      if (dest) {
+                          for (var i = 0; i < data.length; i++) {
+                              if (srcNam !== data[i].name) {
+                                  tGeoDt.push({
+                                      coords: [geoData[srcNam], geoData[data[i].name]]
+                                  })
+                              }
+                          }
+                      } else {
+                          for (var j = 0; j < data.length; j++) {
+                              if (srcNam !== data[j].name) {
+                                  tGeoDt.push({
+                                      coords: [geoData[data[j].name], geoData[srcNam]]
+                                  })
+                              }
+                          }
+                      }
+                      return tGeoDt
+                  }
+                  //  生成进线方法
+                  function formtVData(geoData, data, srcNam) {
+                      var tGeoDt = []
+                      for (var i = 0; i < data.length; i++) {
+                          var tNam = data[i].name
+                          if (srcNam !== tNam) {
+                              tGeoDt.push({
+                                  name: tNam,
+                                  value: geoData[tNam]
+                              })
+                          }
+                      }
+                      tGeoDt.push({
+                          name: srcNam,
+                          value: geoData[srcNam],
+                          symbolSize: 8,
+                          itemStyle: {
+                              normal: {
+                                  color: 'red',
+                                  borderColor: '#000'
+                              }
+                          }
+                      }) 
+                      return tGeoDt
+                  }
+
+
+export default  {
+                      title: {  
+                          sublink: 'http://esa.un.org/wpp/Excel-Data/population.htm',  
+                          left: 'center',  
+                          top: 'top'
+                      },
+                      grid: {
+                          left: '1%',
+                          right: '1%',
+                          top:'1%',
+                          bottom: '1%',
+                          containLabel: true
+                        },
+                      // legend:{
+                      //     data:["中文","english"]
+                      // },
+                      dataRange: {
+                          show: false,
+                          //  调色板显示与否
+                          min: 0,
+                          max: 1000000,
+                          text: ['High', 'Low'],
+                          realtime: true,
+                          calculable: true,
+                          color:['#066bd1','yellow','#088bfd']
+                          // color: ['orangered', 'yellow', 'lightskyblue'] //  生成地图颜色以及发散点颜色
+                      },
+                      tooltip: {
+                          trigger: 'item'
+                      },
+                      geo: {
+                          map: 'world',
+                          label: {
+                              emphasis: {
+                                  show: false
+                              }
+                          },
+                          roam: false,
+                          silent: true,
+                          itemStyle: {
+                              normal: {
+                                  areaColor: '#37376e',
+                                  borderColor: '#000'
+                              },
+                              emphasis: {
+                                  areaColor: '#2a333d'
+                              }
+                          }
+                      },
+                      series: [{        
+                          type: 'map',
+                          mapType: 'world',
+                          zoom: 1.2,
+                          mapLocation: {
+                              y: 100
+                          },
+                          itemStyle: {  
+                              emphasis: {
+                                  label: {
+                                      show: true
+                                  }
+                              }
+                          },
+                          // 对应生成地图颜色板块数据
                           data: [{
                               name: 'Afghanistan',
                               value: 28397.812
@@ -707,3 +851,6 @@
                               name: 'Zimbabwe',
                               value: 13076.978
                           }]
+                      }]
+    }
+</script>
